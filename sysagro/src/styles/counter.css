@@ -6,6 +6,7 @@
 
 .counter__item{
     width: 25%;
+    text-align: center;
 }
 
 .counter__number, .counter__title{
