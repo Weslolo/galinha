@@ -4,13 +4,30 @@
 :root {
   --primary-color: #00c160;
   --heading-color: #fff;
-  --btn-primary-bg: #009b4d;
-  --btn-secondary-bg: #008b45;
+
+  --btn-primary-bg: #008b45;
+  --btn-secondary-bg: #009b4d;
   --btn-hover-bg: #0ad16e;
+
   --team-card-bg: #005028;
+  
   --link-color: #fff;
+  --link-hover: #e4e4e4;
   --link-active: #00c160;
+  
+  --link-2-color: #ddd;
+  --link-2-hover: #fff;
+
   --shadow: #e4e4e4;
+  --shadow-secondary: #e4e4e4;
+  
+  --body-bg: rgba(6, 11, 11, 1);
+  --body-bg-2: #001a0d;
+
+  
+  --header-bg: var(--body-bg);
+  --header-shadow: rgba(0,0,0,0);
+
   --card-bg: linear-gradient(
     45deg,
     rgba(15, 18, 61, 1) 33%,
@@ -23,8 +40,6 @@
     rgba(29, 129, 176, 1) 55%,
     rgb(35, 173, 81) 75%
   );
-  --body-bg: rgba(6, 11, 11, 1);
-  --body-bg-2: #001a0d;
   --newsletter-bg: linear-gradient(
     90deg,
     rgba(27, 9, 115, 1) 20%,
@@ -35,19 +50,31 @@
   --font-name: "Roboto", sans-serif;
   --small-text-color: rgba(255, 255, 255, 0.774);
   --icon-bg:#151e4f;
+
 }
 
 .light-theme {
-  --body-bg: rgb(255, 255, 255);
-  --heading-color: #0c123d;
-  --btn-secondary-bg: #816aff;
-  --btn-primary-bg: #fff;
-  --primary-color: #816aff;
+  --body-bg: #def7e7;
+  --heading-color: #191919;
+
+  --btn-secondary-bg: #008f47;
+  --btn-primary-bg: #009b4d;
+  --btn-hover-bg: #07b65f;
+
+  --primary-color: #20b169;
   --counter-color: #fff;
-  --counter-section-bg: #816aff;
-  --link-color: #0c123d;
-  --link-active: #816aff;
-  --shadow: #000;
+  --counter-section-bg: #009b4d;
+
+  --link-color: #009b4d;
+  --link-hover: #07b65f;
+  --link-active: #009b4d;
+  
+  --link-2-color: #222;
+  --link-2-hover: #666;
+
+  --shadow: #444;
+  --shadow-secondary: #34c37b;
+
   --newsletter-bg: linear-gradient(
     180deg,
     rgba(189, 243, 255, 1) 29%,
@@ -58,6 +85,9 @@
   --card-bg:#fff;
   --testimonial-bg: #f7f7f7;
   --team-card-bg: #fff;
+
+  --header-bg: #fff;
+  --header-shadow: #fff;
 }
 
 

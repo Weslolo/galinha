@@ -52,16 +52,16 @@
 }
 
 .primary__btn{
-    background: var(--btn-secondary-bg);
-    border: 1px solid var(--btn-primary-bg);
+    background: var(--btn-primary-bg);
+    border: 1px solid var(--btn-secondary-bg);
     font-weight: 700;
     letter-spacing: 1px;
     font-size: 1rem;
 }
 
 .primary__btn:hover {
-  background: var(--btn-primary-bg);
-  box-shadow: 0px 0px 5px 1px var(--shadow)
+  background: var(--btn-secondary-bg);
+  box-shadow: 0px 0px 5px 1px var(--shadow-secondary)
 }
 
 .secondary__btn{

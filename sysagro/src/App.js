@@ -7,11 +7,12 @@ import Counter from "./components/UI/Counter";
 import Services from "./components/UI/Services";
 import Wave from "./components/UI/Wave";
 function App() {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState("light-theme");
 
   const toggleTheme = () => {
     theme == "" ? setTheme("light-theme") : setTheme("");
   };
+
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);

@@ -21,7 +21,7 @@ const Hero = (theme) => {
             </p>
             <div className="hero__btns">
               <button className="primary__btn">
-                Entre em contato para saber mais!!
+                Entre em contato para saber mais!
               </button>
               {/* <button className="secondary__btn">Discover More</button> */}
             </div>

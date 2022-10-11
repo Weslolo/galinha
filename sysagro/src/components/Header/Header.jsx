@@ -38,11 +38,11 @@ const Header = ({ theme, toggleTheme }) => {
             <span onClick={toggleTheme}>
               {theme == "light-theme" ? (
                 <span>
-                  <i class="ri-moon-live"></i>Escuro
+                  <i class="ri-moon-line"></i>Escuro
                 </span>
               ) : (
                 <span>
-                  <i class="ri-sun-line"> Claro</i>
+                  <i class="ri-sun-line"></i> Claro
                 </span>
               )}
             </span>
