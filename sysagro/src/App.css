@@ -2,13 +2,15 @@
 
 
 :root {
-  --primary-color: #379cf6;
+  --primary-color: #00c160;
   --heading-color: #fff;
-  --btn-primary-bg: #379cf6;
-  --btn-secondary-bg: #090238;
-  --team-card-bg: #1b2352;
+  --btn-primary-bg: #009b4d;
+  --btn-secondary-bg: #008b45;
+  --btn-hover-bg: #0ad16e;
+  --team-card-bg: #005028;
   --link-color: #fff;
-  --link-active: #379cf6;
+  --link-active: #00c160;
+  --shadow: #e4e4e4;
   --card-bg: linear-gradient(
     45deg,
     rgba(15, 18, 61, 1) 33%,
@@ -19,9 +21,10 @@
     90deg,
     #02bba6 30%,
     rgba(29, 129, 176, 1) 55%,
-    rgba(35, 93, 173, 1) 75%
+    rgb(35, 173, 81) 75%
   );
-  --body-bg: rgba(6, 11, 26, 1);
+  --body-bg: rgba(6, 11, 11, 1);
+  --body-bg-2: #001a0d;
   --newsletter-bg: linear-gradient(
     90deg,
     rgba(27, 9, 115, 1) 20%,
@@ -43,7 +46,8 @@
   --counter-color: #fff;
   --counter-section-bg: #816aff;
   --link-color: #0c123d;
-  --link-active: #816aff
+  --link-active: #816aff;
+  --shadow: #000;
   --newsletter-bg: linear-gradient(
     180deg,
     rgba(189, 243, 255, 1) 29%,

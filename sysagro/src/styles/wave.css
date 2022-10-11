@@ -1,0 +1,16 @@
+.custom-shape-divider-bottom {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 98px;
+}
+
+.waveContainer {
+    padding: 0;
+}

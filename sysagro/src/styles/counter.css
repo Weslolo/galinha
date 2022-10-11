@@ -25,3 +25,7 @@
 .counter__title{
     font-size: 1.5rem;
 }
+
+.counter {
+    background: var(--body-bg-2);
+}

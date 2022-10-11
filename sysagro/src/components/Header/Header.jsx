@@ -7,30 +7,18 @@ const nav__link = [
     display: "Home",
   },
   {
-    path: "#about",
-    display: "About",
-  },
-  {
-    path: "#service",
-    display: "Service",
-  },
-  {
-    path: "#projects",
-    display: "Projects",
-  },
-  {
-    path: "#blog",
-    display: "Blog",
+    path: "#sobre",
+    display: "Sobre",
   },
 ];
 
-const Header = () => {
+const Header = ({ theme, toggleTheme }) => {
   return (
     <header className="header">
       <div className="container">
         <div className="nav__wrapper">
           <div className="logo">
-            <h2>Sysagro</h2>
+            <h2>SysAgro</h2>
           </div>
           {/* ===============       navegação       ================= */}
           <div className="navigation">
@@ -47,9 +35,16 @@ const Header = () => {
 
           {/* ===========================  modo escuro  ====================*/}
           <div className="light__mode">
-            <span>
-              <i class="ri-sun-line"></i>
-              Light Mode
+            <span onClick={toggleTheme}>
+              {theme == "light-theme" ? (
+                <span>
+                  <i class="ri-moon-live"></i>Escuro
+                </span>
+              ) : (
+                <span>
+                  <i class="ri-sun-line"> Claro</i>
+                </span>
+              )}
             </span>
           </div>
         </div>
