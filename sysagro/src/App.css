@@ -16,7 +16,7 @@
   --link-active: #00c160;
   
   --link-2-color: #ddd;
-  --link-2-hover: #fff;
+  --link-2-hover: #666;
 
   --shadow: #e4e4e4;
   --shadow-secondary: #e4e4e4;
@@ -67,8 +67,8 @@
   --counter-section-bg: #009b4d;
 
   --link-color: #009b4d;
-  --link-hover: #07b65f;
-  --link-active: #009b4d;
+  --link-hover: #005028;
+  --link-active: #005028;
   
   --link-2-color: #222;
   --link-2-hover: #666;
@@ -133,10 +133,23 @@ section{
 }
 
 ::-webkit-scrollbar {
-  width: 12px;           
+  width: 10px;           
 }
 ::-webkit-scrollbar-thumb {
   background-color: #008b45;  
-  border-radius: 20px;     
+      
 
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-in-out, transform .6s ease-in-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }

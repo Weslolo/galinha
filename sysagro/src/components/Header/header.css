@@ -6,6 +6,7 @@
     background-color: var(--header-bg);
 }
 
+
 .nav__wrapper{
     display: flex;
     align-items: center;
@@ -24,6 +25,7 @@
     font-size: 1.1rem;
     cursor: pointer;
     font-weight: 700;
+  
 }
 
 .menu__link:hover{

@@ -1,7 +1,7 @@
-.card {
+.cardWrapper {
     padding: 30px 0;
+    background-color: var(--body-bg-2);
 }
-
 .containerCards {
     width: 100%;
     padding: 0px 15px;
@@ -17,7 +17,6 @@
 
 .cardItem{
     padding: 0 5%;
-    width: 25%;
     text-align: center;
     min-height: 15rem;
 }
@@ -41,3 +40,4 @@
     width: 100%;
     min-height: 12rem;
 }
+

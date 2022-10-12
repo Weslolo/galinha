@@ -11,15 +11,39 @@
 }
 
 .hero__img {
+    position: relative;
     display: flex;
     justify-content: center;
     min-height: 40rem;
+    animation: smart 1s cubic-bezier(.39,.69,.01,.82);
+
+}
+@keyframes smart{
+    0%{
+       opacity: 0;
+       transform: translateX(50px);
+    }
+    100%{
+      opacity: 1;
+
+    }
 }
 
 .hero__content{
     padding-top: 40px;
+    min-height: 40rem;
+    animation: content .8s cubic-bezier(.39,.69,.01,.82);
 }
+@keyframes content{
+    0%{
+       opacity: 0;
+       transform: translateX(-40px);
+    }
+    100%{
+      opacity: 1;
 
+    }
+}
 .hero__content h2 {
     font-size: 3rem;
     line-height: 65px;

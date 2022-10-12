@@ -6,6 +6,11 @@ import facilidadeUso from "../../images/facilidadeUso.svg";
 import onlineOffline from "../../images/onlineOffline.svg";
 import rapidoEficiente from "../../images/rapidoEficiente.svg";
 
+//Bootstrap
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 const cardData = [
   {
     imagem: rapidoEficiente,
@@ -33,13 +38,23 @@ const cardData = [
   },
 ];
 
-const Counter = () => {
+const Cards = () => {
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+
   return (
-    <section className="card" id="projects">
-      <div className="container">
-        <div className="cardsWrapper">
+    <section className="cardWrapper" id="projects">
+      <Container className="container">
+        <Row className="cardsWrapper">
           {cardData.map((item, index) => (
-            <div className="cardItem" key={index}>
+            <Col className={["cardItem", `fade-in-section ${isVisible ? 'is-visible' : ''}`].join(" ")} key={index} xs={6} md={3}  ref={domRef}>
               <img
                 src={item.imagem}
                 alt={item.imagemAlt}
@@ -47,12 +62,12 @@ const Counter = () => {
               />
               <h3 className="cardTitulo">{item.text}</h3>
               <h3 className="cardDescricao">{item.descricao}</h3>
-            </div>
+            </Col>
           ))}
-        </div>
-      </div>
+        </Row>
+      </Container>
     </section>
   );
 };
 
-export default Counter;
+export default Cards;
