@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/UI/Hero";
-import Counter from "./components/UI/Counter";
+import Counter from "./components/UI/Cards";
 import Services from "./components/UI/Services";
 import Wave from "./components/UI/Wave";
 function App() {
