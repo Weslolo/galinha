@@ -22,7 +22,7 @@
   --shadow-secondary: #e4e4e4;
   
   --body-bg: rgba(6, 11, 11, 1);
-  --body-bg-2: #001a0d;
+  --body-bg-2: #012a15;
 
   
   --header-bg: var(--body-bg);
@@ -55,6 +55,7 @@
 
 .light-theme {
   --body-bg: #def7e7;
+  --body-bg-2: #fff;
   --heading-color: #191919;
 
   --btn-secondary-bg: #008f47;
