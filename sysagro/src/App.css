@@ -100,6 +100,7 @@
 body{
     background: var(--body-bg);
     font-family: var(--font-name);
+  
 }
 
 a{
@@ -128,4 +129,13 @@ section{
   color: var(--small-text-color);
   line-height: 30px;
   font-size: .9rem;
+}
+
+::-webkit-scrollbar {
+  width: 12px;           
+}
+::-webkit-scrollbar-thumb {
+  background-color: #008b45;  
+  border-radius: 20px;     
+
 }
