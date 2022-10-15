@@ -54,7 +54,7 @@ const Cards = () => {
       <Container className="container">
         <Row className="cardsWrapper">
           {cardData.map((item, index) => (
-            <Col className={["cardItem", `fade-in-section ${isVisible ? 'is-visible' : ''}`].join(" ")} key={index} xs={6} md={3}  ref={domRef}>
+            <Col className={["cardItem", `fade-in-section ${isVisible ? 'is-visible' : ''}`].join(" ")} key={index} xs={6} md={3} ref={domRef}>
               <img
                 src={item.imagem}
                 alt={item.imagemAlt}

@@ -2,13 +2,18 @@
 
 
 :root {
-  --primary-color: #00c160;
+  --body-bg: rgba(6, 11, 11, 1);
+  --body-bg-2: #012a15;
+  --body-bg-3: #daf7bb;
+
   --heading-color: #fff;
 
+  
   --btn-primary-bg: #008b45;
   --btn-secondary-bg: #009b4d;
   --btn-hover-bg: #0ad16e;
-
+  
+  --primary-color: #00c160;
   --team-card-bg: #005028;
   
   --link-color: #fff;
@@ -21,8 +26,6 @@
   --shadow: #e4e4e4;
   --shadow-secondary: #e4e4e4;
   
-  --body-bg: rgba(6, 11, 11, 1);
-  --body-bg-2: #012a15;
 
   
   --header-bg: var(--body-bg);
@@ -56,6 +59,8 @@
 .light-theme {
   --body-bg: #def7e7;
   --body-bg-2: #fff;
+  --body-bg-3: #d6efba;
+
   --heading-color: #191919;
 
   --btn-secondary-bg: #008f47;
@@ -96,6 +101,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 body{

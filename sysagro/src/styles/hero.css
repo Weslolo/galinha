@@ -6,18 +6,14 @@
     justify-content: space-between;
 }
 
-.hero__content, .hero__img{
-    width: 50%;
-}
-
 .hero__img {
     position: relative;
     display: flex;
     justify-content: center;
     min-height: 40rem;
     animation: smart 1s cubic-bezier(.39,.69,.01,.82);
-
 }
+
 @keyframes smart{
     0%{
        opacity: 0;
@@ -31,7 +27,7 @@
 
 .hero__content{
     padding-top: 40px;
-    min-height: 40rem;
+    margin-bottom: 3rem;
     animation: content .8s cubic-bezier(.39,.69,.01,.82);
 }
 @keyframes content{
@@ -46,13 +42,13 @@
 }
 .hero__content h2 {
     font-size: 3rem;
-    line-height: 65px;
+    line-height: 4rem;
 }
 
 
 .hero__content p {
     margin-top: 40px;
-    font-size: 1.1rem;
+    font-size: 18px;
     text-align: justify;
 }
 
@@ -96,4 +92,16 @@
 .imgCelular {
     width: 100%;
     max-width: 350px;
+}
+
+
+@media (max-width: 991px) { 
+    .justifyCenterMD {
+        display: flex;
+        justify-content: center;
+    }   
+    .textAlignCenterMD {
+        text-align: center;
+    }
+
 }

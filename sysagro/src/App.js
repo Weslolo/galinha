@@ -7,7 +7,7 @@ import "./styles/bootstrap-grid.min.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/UI/Hero";
 import Cards from "./components/UI/Cards";
-import Services from "./components/UI/Services";
+import Problema from "./components/UI/Problema";
 import Wave from "./components/UI/Wave";
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
       <Hero theme={theme} />
       <Wave corWave={"var(--body-bg-2)"} />
       <Cards />
-      <Wave corWave={"var(--body-bg)"} corBackground={"var(--body-bg-2)"} />
-      <Services />
+      <Wave corWave={"var(--body-bg-3)"} corBackground={"var(--body-bg-2)"} />
+      <Problema />
     </>
   );
 }

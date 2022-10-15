@@ -18,13 +18,13 @@ const Header = ({ theme, toggleTheme }) => {
       <div className="container">
         <div className="nav__wrapper">
           <div className="logo">
-            <h2>SysAgro</h2>
+            <img src="" alt="" />
           </div>
           {/* ===============       navegação       ================= */}
           <div className="navigation">
             <ul className="menu">
               {nav__link.map((item, index) => (
-                <li className="menu__item">
+                <li className="menu__item" key={index}>
                   <a href={item.path} className="menu__link">
                     {item.display}
                   </a>
@@ -37,7 +37,7 @@ const Header = ({ theme, toggleTheme }) => {
           {/* ===========================  modo escuro  ====================*/}
           <div className="light__mode">
             <span onClick={toggleTheme}>
-              {theme == "light-theme" ? (
+              {theme === "light-theme" ? (
                 <span>
                   <i className="ri-moon-line"></i>Escuro
                 </span>

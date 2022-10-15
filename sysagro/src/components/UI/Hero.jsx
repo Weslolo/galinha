@@ -2,40 +2,45 @@ import React from "react";
 import "../../styles/hero.css";
 import heroDarkImg from "../../images/telaInicialCelular.png";
 import lightImg from "../../images/telaInicialCelular.png";
+
+//Bootstrap
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 const Hero = (theme) => {
   return (
     <section className="hero__section">
-      <div className="container">
-        <div className="hero__wrapper">
-          <div className="hero__content">
+      <Container className="container">
+        <Row className="hero__wrapper">
+          <Col className="hero__content" xs={12} md={6}>
             <div>
-              <h2>
+              <h2 class="textAlignCenterMD">
                 Uma Solução Inovadora para o{" "}
                 <span className="highlight">Manejo Pré-abate de Aves</span>
               </h2>
             </div>
-            <p className="description">
+            <p className="description textAlignCenterMD">
               Através de um aplicativo mobile integrado com um sistema WEB, a
               SysAgro conecta o produtor e o extensionista praticamente em tempo
               real.
             </p>
-            <div className="hero__btns">
+            <div className="hero__btns justifyCenterMD">
               <button className="primary__btn">
                 Entre em contato para saber mais!
               </button>
-              {/* <button className="secondary__btn">Discover More</button> */}
             </div>
-          </div>
+          </Col>
 
-          <div className="hero__img">
+          <Col className="hero__img" xs={12} md={6}>
             <img
-              src={theme == "light-theme" ? lightImg : heroDarkImg}
+              src={theme === "light-theme" ? lightImg : heroDarkImg}
               alt="hero-img"
               className="imgCelular"
             />
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };
