@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
   --body-bg: rgba(6, 11, 11, 1);
@@ -25,8 +26,8 @@
 
   --shadow: #e4e4e4;
   --shadow-secondary: #e4e4e4;
-  
 
+  --footer-color: #222;
   
   --header-bg: var(--body-bg);
   --header-shadow: rgba(0,0,0,0);
@@ -79,7 +80,10 @@
   --link-2-hover: #666;
 
   --shadow: #444;
+  --shadow-light: #ccc;
   --shadow-secondary: #34c37b;
+
+  --footer-color: #222;
 
   --newsletter-bg: linear-gradient(
     180deg,
@@ -130,14 +134,7 @@ h1,h2{
 }
 
 section{
-  padding: 60px 0px;
-}
-
-
-.container{
-  width: 1140px;
-  padding: 0px 15px;
-  margin: auto;
+  padding: 5rem 0px;
 }
 
 
@@ -167,4 +164,30 @@ section{
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+
+.primary__btn, .secondary__btn{
+  padding: 0.8rem 1.5rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.primary__btn{
+  background: var(--btn-primary-bg);
+  border: 1px solid var(--btn-secondary-bg);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.primary__btn:hover {
+background: var(--btn-secondary-bg);
+box-shadow: 0px 0px 5px 1px var(--shadow-secondary)
+}
+
+.secondary__btn{
+  background: var(--btn-primary-bg);
 }

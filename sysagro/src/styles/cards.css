@@ -24,6 +24,7 @@
 .cardTitulo {
     color: var(--primary-color);
     font-size: 1.5em;
+    margin-top: 0;
 }
 
 .cardDescricao {
@@ -32,9 +33,7 @@
     margin-top: 15px;
 }
 
-.card {
-    background: var(--body-bg-2);
-}
+
 
 .imgCard {
     width: 100%;

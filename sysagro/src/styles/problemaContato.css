@@ -1,0 +1,54 @@
+
+/* Geral */
+#services {
+    background: var(--body-bg-3);
+    padding: 0 0 20px;
+}
+
+.tituloProblema {
+    text-align: center;
+    font-size: 1.7rem;
+}
+.card {
+    background: var(--body-bg-2);
+    padding: 2em 3em;
+    box-shadow: 1px 1px 4px var(--shadow-light);
+    border-radius: 1em;
+    width: 75%;
+    margin: auto;
+}
+
+.cardTextoPrincipal {
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    line-height: 2.2rem;
+}
+/* FIM Geral*/
+
+/* Informações finais*/
+.infoFinaisCard {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tituloInfoFinal {
+    font-weight: 700;
+    font-family: 'Concert One', cursive;
+    margin-top: 2rem;
+}
+
+.botaoInfoFinal {
+    width: fit-content;
+    margin: 1rem auto 0;
+    
+}
+
+.descInfoFinal {
+    margin: 1rem 0
+}
+
+/* FIM Informações finais*/

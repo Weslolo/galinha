@@ -4,7 +4,7 @@ import "./header.css";
 const nav__link = [
   {
     path: "#home",
-    display: "Home",
+    display: "Início",
   },
   {
     path: "#sobre",

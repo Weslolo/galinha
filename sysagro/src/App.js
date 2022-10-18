@@ -7,8 +7,9 @@ import "./styles/bootstrap-grid.min.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/UI/Hero";
 import Cards from "./components/UI/Cards";
-import Problema from "./components/UI/Problema";
+import ProblemaContato from "./components/UI/ProblemaContato";
 import Wave from "./components/UI/Wave";
+import Footer from "./components/UI/Footer";
 
 function App() {
   const [theme, setTheme] = useState("light-theme");
@@ -27,7 +28,8 @@ function App() {
       <Wave corWave={"var(--body-bg-2)"} />
       <Cards />
       <Wave corWave={"var(--body-bg-3)"} corBackground={"var(--body-bg-2)"} />
-      <Problema />
+      <ProblemaContato />
+      <Footer theme={theme}/>
     </>
   );
 }
