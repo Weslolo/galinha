@@ -50,7 +50,7 @@ const Cards = () => {
   }, []);
 
   return (
-    <section className="cardWrapper" id="projects">
+    <section className="cardWrapper">
       <Container className="container">
         <Row className="cardsWrapper">
           {cardData.map((item, index) => (

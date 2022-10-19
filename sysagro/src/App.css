@@ -30,13 +30,13 @@
   --footer-color: #222;
   
   --header-bg: var(--body-bg);
-  --header-shadow: rgba(0,0,0,0);
+  --header-shadow: rgba(23, 82, 8, 0.37);
 
   --card-bg: linear-gradient(
-    45deg,
-    rgba(15, 18, 61, 1) 33%,
-    rgba(15, 18, 61, 1) 52%,
-    rgba(11, 41, 69, 1) 84%
+    90deg,
+    rgb(34, 59, 40) 38%,
+    rgb(27, 49, 26) 100%,
+    rgb(15, 29, 19) 20%
   );
   --counter-color: linear-gradient(
     90deg,
@@ -46,14 +46,16 @@
   );
   --newsletter-bg: linear-gradient(
     90deg,
-    rgba(27, 9, 115, 1) 20%,
-    rgba(23, 9, 96, 1) 38%,
-    rgba(14, 9, 56, 1) 100%
+    rgb(10, 122, 44) 20%,
+    rgb(6, 80, 22) 38%,
+    rgb(5, 26, 4) 100%
   );
   --testimonial-bg: #1a0f4f;
   --font-name: "Roboto", sans-serif;
   --small-text-color: rgba(255, 255, 255, 0.774);
   --icon-bg:#151e4f;
+  --footer-color: #c4c4c4;
+
 
 }
 
@@ -61,6 +63,7 @@
   --body-bg: #def7e7;
   --body-bg-2: #fff;
   --body-bg-3: #d6efba;
+
 
   --heading-color: #191919;
 
@@ -83,7 +86,8 @@
   --shadow-light: #ccc;
   --shadow-secondary: #34c37b;
 
-  --footer-color: #222;
+  --footer-color: #6e6e6e;
+
 
   --newsletter-bg: linear-gradient(
     180deg,
@@ -98,6 +102,8 @@
 
   --header-bg: #fff;
   --header-shadow: #fff;
+  --header-shadow: rgba(23, 82, 8, 0.37);
+
 }
 
 
@@ -105,10 +111,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all .1s ease-in-out;
 }
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 800px) {

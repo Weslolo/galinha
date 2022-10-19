@@ -1,7 +1,7 @@
 
 /* Geral */
-#services {
-    background: var(--body-bg-3);
+#missao {
+    background: var(--body-bg);
     padding: 0 0 20px;
 }
 
@@ -10,12 +10,15 @@
     font-size: 1.7rem;
 }
 .card {
-    background: var(--body-bg-2);
+    background: var( --card-bg);
     padding: 2em 3em;
     box-shadow: 1px 1px 4px var(--shadow-light);
     border-radius: 1em;
     width: 75%;
     margin: auto;
+    color: var(--small-text-color);
+
+    
 }
 
 .cardTextoPrincipal {
@@ -51,4 +54,10 @@
     margin: 1rem 0
 }
 
+
+@media (max-width: 991px) { 
+    .card {
+        width: 100%;
+    }   
+}
 /* FIM Informações finais*/

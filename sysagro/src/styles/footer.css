@@ -1,6 +1,24 @@
 #footer {
-    color: var(--footer-color);
+    color: var(--small-text-color);
+    background-color: var(--body-bg-2);
     display: flex;
     justify-content: center;
     padding: 2rem 0;
+    font-size: 1.3rem;
+}
+
+.imgFooter {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.2rem;
+    margin-top: 0.05rem;
+}
+.imgFooter path {
+    fill: var(--footer-color);
+}
+
+.trademark {
+    display: flex;
+    color: var(--footer-color);
+    
 }

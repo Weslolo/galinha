@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col';
 
 const Hero = (theme) => {
   return (
-    <section className="hero__section">
+    <section id="inicio" className="hero__section">
       <Container className="container">
         <Row className="hero__wrapper">
           <Col className="hero__content" xs={12} md={6}>

@@ -25,9 +25,9 @@ function App() {
     <>
       <Header theme={theme} toggleTheme={toggleTheme} />
       <Hero theme={theme} />
-      <Wave corWave={"var(--body-bg-2)"} />
+      <Wave corWave={"var(--body-bg-2)"} id="caracteristicas"/>
       <Cards />
-      <Wave corWave={"var(--body-bg-3)"} corBackground={"var(--body-bg-2)"} />
+      <Wave corWave={"var(--body-bg)"} corBackground={"var(--body-bg-2)"} />
       <ProblemaContato />
       <Footer theme={theme}/>
     </>

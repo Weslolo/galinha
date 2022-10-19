@@ -6,6 +6,7 @@ const Wave = (props) => {
     <section
       className="waveContainer"
       style={{ background: props.corBackground }}
+      id={props.id}
     >
       <div className="custom-shape-divider-bottom">
         <svg
