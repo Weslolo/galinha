@@ -27,7 +27,7 @@
 }
 
 .hero__content{
-    padding-top: 40px;
+    padding-top: 3rem;
     margin-bottom: 3rem;
     animation: content .8s cubic-bezier(.39,.69,.01,.82);
 }
@@ -78,6 +78,28 @@
     }   
     .textAlignCenterMD {
         text-align: center;
+    }  
+    
+    .navigationMobile {
+        display: flex;
+        justify-content: center;
     }
 
+    .navigationDesktop {
+        display: none;
+    }
+
+    .logo {
+        justify-self: center;
+    }
+
+    .hero__section {
+        padding-top: 8rem;
+    }
+}
+
+@media (max-width: 450px) { 
+    .hero__section {
+        padding-top: 5rem;
+    }
 }

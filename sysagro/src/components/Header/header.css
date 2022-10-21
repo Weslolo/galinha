@@ -1,4 +1,4 @@
-.header{
+.header {
     width: 100%;
     height: 5.5rem;
     line-height: 5rem;
@@ -9,20 +9,23 @@
     z-index: 9999;
 }
 
-.logo{
-    max-width:200px;
-    max-height:5rem;
+.logo {
+    max-width: 200px;
+    max-height: 5rem;
     width: auto;
     height: auto;
     display: flex;
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
-.logo path{
+
+.logo path {
     fill: var(--link-color);
 
 }
 
-.nav__wrapper{
+.nav__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,14 +33,14 @@
 }
 
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
     column-gap: 2.7rem;
     list-style: none;
 }
 
-.menu__link{
+.menu__link {
     font-weight: 400;
     font-size: 18px;
     cursor: pointer;
@@ -45,11 +48,11 @@
     user-select: none;
 }
 
-.menu__link:hover{
+.menu__link:hover {
     color: var(--link-active);
 }
 
-.logo h2{
+.logo h2 {
     color: var(--primary-color);
 }
 
@@ -69,7 +72,7 @@
 }
 
 
-.header__shrink{
+.header__shrink {
     width: 100%;
     height: 5rem;
     line-height: 5rem;
@@ -87,20 +90,109 @@
     color: var(--link-hover);
 }
 
-.navigationMobile {     
-    display: none;
-}
-
 .navigationDesktop {
-    display: flex;
+    display: block;
 }
 
-@media (max-width: 991px) { 
+
+/* -------------------- BURGER ------------------------*/
+
+.navigationMobile {
+    display: none;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: var(--burger-color);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 20rem !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    /* background: #373a47; */
+    background: #068746;
+    font-size: 1.5rem;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+}
+
+.menuBurgerLink {
+    color: var(--burger-link-color);
+    border-bottom: 1px solid;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex !important;
+}
+
+/* -------------------- FIM BURGUER ------------------------*/
+
+
+
+
+@media (max-width: 991px) {
     .navigationMobile {
         display: flex;
         justify-content: center;
     }
+
     .navigationDesktop {
         display: none;
+    }
+
+    .logo {
+        justify-self: center;
+        max-width: 75%;
     }
 }

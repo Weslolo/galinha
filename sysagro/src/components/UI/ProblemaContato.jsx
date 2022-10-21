@@ -21,7 +21,7 @@ const ProblemaContato = () => {
           <div class="infoFinaisCard">
             <span class="tituloInfoFinal">Acabe com o Problema do Manejo Pré-abate</span>
             <small class="descInfoFinal">Otimize todo o processo através da solução SysAgro Aviário.</small>
-            <button class="primary__btn botaoInfoFinal">Entre em contato agora!</button>
+            <a class="primary__btn botaoInfoFinal" href="mailto:odete.barros@sysagrosistemas.com.br">Entre em contato agora!</a>
           </div>
           </div>
         </div>

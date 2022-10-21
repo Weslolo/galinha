@@ -26,9 +26,9 @@ const Hero = (theme) => {
               real.
             </p>
             <div className="hero__btns justifyCenterMD">
-              <button className="primary__btn">
+              <a className="primary__btn" href="mailto:odete.barros@sysagrosistemas.com.br">
                 Entre em contato para saber mais!
-              </button>
+              </a>
             </div>
           </Col>
 

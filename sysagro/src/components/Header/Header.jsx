@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 
 import { ReactComponent as Logo } from "../../images/LogoSysAgroBranca.svg";
@@ -8,40 +8,59 @@ const nav__link = [
   {
     path: "#inicio",
     display: "Início",
+    icon: 'ri-home-2-line'
   },
   {
     path: "#caracteristicas",
     display: "Características",
+    icon: 'ri-star-fill'
   },
   {
     path: "#missao",
     display: "Missão",
+    icon: 'ri-focus-2-line'
   },
   {
-    path: "#contato",
+    path: "mailto:odete.barros@sysagrosistemas.com.br",
     display: "Contato",
+    icon: 'ri-user-fill'
   },
 ];
 
 const Header = ({ theme, toggleTheme }) => {
+
+  const [isOpen, setOpen] = useState(false)
+
+  const handleIsOpen = () => {
+    setOpen(!isOpen)
+  }
+
+  const closeSideBar = () => {
+    setOpen(false)
+  }
+
   return (
     <header className="header">
       <div className="container">
         <div className="nav__wrapper">
-
-
           {/* ===============       Navegação Mobile      ================= */}
           <div className="navigationMobile">
-            <Menu>
-              <a id="home" className="menu-item" href="/">Home</a>
-              <a id="about" className="menu-item" href="/about">About</a>
-              <a id="contact" className="menu-item" href="/contact">Contact</a>
+            <Menu className="menuBurger" 
+              isOpen={isOpen}
+              onOpen={handleIsOpen}
+              onClose={handleIsOpen}
+            >
+              {nav__link.map((item, index) => (
+                <a href={item.path} className="menuBurgerLink" onClick={closeSideBar}>
+                  <i className={item.icon}></i>&nbsp;&nbsp;{item.display}
+                </a>
+              ))}
             </Menu>
           </div>
 
 
           <div className="logo">
-            <Logo alt="aaa" className="logo" />
+            <Logo alt="Logo Sysagro" className="logo" />
           </div>
 
 

@@ -32,6 +32,11 @@
   --header-bg: var(--body-bg);
   --header-shadow: rgba(23, 82, 8, 0.37);
 
+  --burger-color: #fff;
+  --burger-link-color: #fff;
+
+  --problema-card-color: #fff;
+
   --card-bg: linear-gradient(
     90deg,
     rgb(34, 59, 40) 38%,
@@ -88,6 +93,8 @@
 
   --footer-color: #6e6e6e;
 
+  --problema-card-color: #000;
+
 
   --newsletter-bg: linear-gradient(
     180deg,
@@ -104,6 +111,8 @@
   --header-shadow: #fff;
   --header-shadow: rgba(23, 82, 8, 0.37);
 
+  --burger-color: var(--primary-color);
+  --burger-link-color: #fff;
 }
 
 
@@ -111,7 +120,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all .1s ease-in-out;
 }
 
 html {
@@ -122,6 +130,16 @@ html {
 @media only screen and (max-width: 800px) {
   html {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+
+  .primary__btn {
+    font-size: 1.3rem !important;
   }
 }
 

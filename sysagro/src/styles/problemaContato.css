@@ -16,9 +16,7 @@
     border-radius: 1em;
     width: 75%;
     margin: auto;
-    color: var(--small-text-color);
-
-    
+    color: var(--problema-card-color);
 }
 
 .cardTextoPrincipal {
