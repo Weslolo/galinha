@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/problemaContato.css";
 
-const ProblemaContato = () => {
+const MissaoContato = ({theme, modalHandleShow}) => {
   return (
     <section id="missao">
       <div className="container">
@@ -21,7 +21,7 @@ const ProblemaContato = () => {
           <div class="infoFinaisCard">
             <span class="tituloInfoFinal">Acabe com o Problema do Manejo Pré-abate</span>
             <small class="descInfoFinal">Otimize todo o processo através da solução SysAgro Aviário.</small>
-            <a class="primary__btn botaoInfoFinal" href="mailto:odete.barros@sysagrosistemas.com.br">Entre em contato agora!</a>
+            <a class="primary__btn botaoInfoFinal" onClick={() => {modalHandleShow()}}>Entre em contato agora!</a>
           </div>
           </div>
         </div>
@@ -30,4 +30,4 @@ const ProblemaContato = () => {
   );
 };
 
-export default ProblemaContato;
+export default MissaoContato;

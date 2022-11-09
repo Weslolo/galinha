@@ -8,7 +8,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const Hero = (theme) => {
+const Hero = ({theme, modalHandleShow}) => {
   return (
     <section id="inicio" className="hero__section">
       <Container className="container">
@@ -26,7 +26,7 @@ const Hero = (theme) => {
               real.
             </p>
             <div className="hero__btns justifyCenterMD">
-              <a className="primary__btn" href="mailto:odete.barros@sysagrosistemas.com.br">
+              <a className="primary__btn" onClick={() => {modalHandleShow()}}>
                 Entre em contato para saber mais!
               </a>
             </div>

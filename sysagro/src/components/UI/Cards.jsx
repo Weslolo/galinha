@@ -16,7 +16,7 @@ const cardData = [
     imagem: rapidoEficiente,
     imagemAlt: "Imagem de Eficiência",
     text: "Rápido e eficiente",
-    descricao: "Conexão quase em tempo real entre o produtor e o extensionista"
+    descricao: "Conexão em tempo real entre o produtor e o extensionista"
   },
   {
     imagem: facilidadeUso,
